@@ -1,4 +1,4 @@
-xkb_symbols "phonetic" {
+xkb_symbols "basic" {
   // Include US basic AND the Right Alt key as the Level 3 switcher
   include "us(basic)+level3(ralt_switch)"
 
@@ -30,7 +30,7 @@ xkb_symbols "phonetic" {
   // Normal: U06F3 (۳)
   // Shift: U0023 (#) (Number Sign)
   // AltGr: U21D4 (⇔) (Left Right Double Arrow)
-  key <AE03> {[	U06F3, U0023, 21D4 ]};
+  key <AE03> {[	U06F3, U0023, U21D4 ]};
 
   // '4' key
   // Normal: U06F4 (۴)
