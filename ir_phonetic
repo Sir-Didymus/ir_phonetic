@@ -1,0 +1,303 @@
+xkb_symbols "phonetic" {
+  // Include US basic AND the Right Alt key as the Level 3 switcher
+  include "us(basic)+level3(ralt_switch)"
+
+  name[Group1] = "Persian (Phonetic, US-based)";
+
+  // ========================
+  // ===== Top row keys =====
+  // ========================
+
+  // '`' key
+  // Normal: U200C (Zero Width Non-Joiner)
+  // Shift: U200D (Zero Width Joiner)
+  // AltGr: U007E (~) (Tilde)
+  key <TLDE> {[ U200C, U200D, U007E ]};
+
+  // '1' key
+  // Normal: U06F1 (۱)
+  // Shift: U0021 (!) (Exclamation Mark)
+  // AltGr: U21D0 (⇐) (Leftwards Double Arrow)
+  key <AE01> {[ U06F1, U0021, U21D0 ]};
+
+  // '2' key
+  // Normal: U06F2 (۲)
+  // Shift: U0040 (@) (At Sign)
+  // AltGr: U21D2 (⇒) (Rightwards Double Arrow)
+  key <AE02> {[ U06F2, U0040, U21D2 ]};
+
+  // '3' key
+  // Normal: U06F3 (۳)
+  // Shift: U0023 (#) (Number Sign)
+  // AltGr: U21D4 (⇔) (Left Right Double Arrow)
+  key <AE03> {[	U06F3, U0023, 21D4 ]};
+
+  // '4' key
+  // Normal: U06F4 (۴)
+  // Shift: UFDFC (﷼) (Rial Sign)
+  // AltGr: U0024 ($) (Dollar Sign)
+  key <AE04> {[ U06F4, UFDFC, U0024 ]};
+
+  // '5' key
+  // Normal: U06F5 (۵)
+  // Shift: U066A (٪) (Arabic Percent Sign)
+  // AltGr: U0025 (%) (Percent Sign)
+  key <AE05> {[	U06F5, U066A, U0025 ]};
+
+  // '6' key
+  // Normal: U06F6 (۶)
+  // Shift: U005E (^) (Circumflex Accent)
+  // AltGr: U2022 (•) (Bullet)
+  key <AE06> {[ U06F6, U005E, U2022 ]};
+
+  // '7' key
+  // Normal: U06F7 (۷)
+  // Shift: U0026 (&) (Ampersand)
+  // AltGr: NoSymbol
+  key <AE07> {[	U06F7, U0026, NoSymbol ]};
+
+  // '8' key
+  // Normal: U06F8 (۸)
+  // Shift: U002A (*) (Asterisk)
+  // AltGr: U00D7 (×) (Multiplication Sign)
+  key <AE08> {[	U06F8, U002A, U00D7	]};
+
+  // '9' key
+  // Normal: U06F9 (۹)
+  // Shift: U0029 ()) (Right Parenthesis)
+  // AltGr: UFD3F (﴿) (Ornate Right Parenthesis)
+  key <AE09> {[	U06F9, U0029, UFD3F	]};
+
+  // '0' key
+  // Normal: U06F0 (۰)
+  // Shift: U0028 (() (Left Parenthesis)
+  key <AE10> {[ U06F0, U0028, UFD3E ]};
+
+  // '-' key
+  // Normal: U002D (-) (Hyphen-Minus)
+  // Shift: U005F (_) (Low Line)
+  // AltGr: U0640 (ـ) (Arabic Tatweel)
+  key <AE11> {[ U002D, U005F, U0640 ]};
+
+  // '=' key
+  // Normal: U003D (=) (Equals Sign)
+  // Shift: U002B (+) (Plus Sign)
+  // AltGr: U2010 (‐) (Hyphen)
+  key <AE12> {[ U003D,	U002B, U2010 ]};
+
+  // ========================
+  // ===== 2nd row keys =====
+  // ========================
+
+  // 'Q' key
+  // Normal: U0642 (ق)
+  // Shift: U063A (غ)
+  // AltGr: U003F (?) (Question Mark)
+  key <AD01> {[ U0642, U063A, U003F ]};
+
+  // 'W' key
+  // Normal: U0634 (ش)
+  // Shift: U0625 (إ)
+  // AltGr: U0655 (ٕ) (Arabic Hamza Below)
+  key <AD02> {[ U0634, U0625, U0655 ]};
+
+  // 'E' key
+  // Normal: U0639 (ع)
+  // Shift: U0621 (ء)
+  // AltGr: U20AC (€) (Euro Sign)
+  key <AD03> {[	U0639, U0621, U20AC ]};
+
+  // 'R' key
+  // Normal: U0631 (ر)
+  // Shift: U0623 (أ)
+  // AltGr: U0654 ( ٔ) (Arabic Hamza Above)
+  key <AD04> {[	U0631, U0623, U0654 ]};
+
+  // 'T' key
+  // Normal: U062A (ت)
+  // Shift: U0637 (ط)
+  // AltGr: NoSymbol
+  key <AD05> {[	U062A, U0637, NoSymbol ]};
+
+  // 'Y' key
+  // Normal: U06CC (ی)
+  // Shift: U0626 (ئ)
+  // AltGr: U0649 (ى) (Arabic Letter Alef Maksura)
+  key <AD06> {[	U06CC, U0626, U0649 ]};
+
+  // 'U' key
+  // Normal: U064E ( َ) (Arabic Fatha)
+  // Shift: U064B ( ً) (Arabic Fathatan)
+  // AltGr: U0670 (◌ٰ) (Arabic Letter Superscript Alef)
+  key <AD07> {[	U064E, U064B, U0670 ]};
+
+  // 'I' key
+  // Normal: U0650 ( ِ) (Arabic Kasra)
+  // Shift: U064D ( ٍ) (Arabic Kasratan)
+  // AltGr: U0656 ( ٖ) (Arabic Subscript Alef)
+  key <AD08> {[	U0650, U064D, U0656 ]};
+
+  // 'O' key
+  // Normal: U064F ( ُ) (Arabic Damma)
+  // Shift: U064C ( ٌ) (Arabic Dammatan)
+  // AltGr: U0652 ( ْ) (Arabic Sukun)
+  key <AD09> {[	U064F, U064C, U0652 ]};
+
+  // 'P' key
+  // Normal: U067E (پ)
+  // Shift: U0651 ( ّ) (Arabic Shadda)
+  // AltGr: NoSymbol
+  key <AD10> {[	U067E, U0651, NoSymbol ]};
+
+  // '[' key
+  // Normal: U005D (]) (Right Square Bracket)
+  // Shift: U007D (}) (Right Curly Bracket)
+  // AltGr: U003E (>) (Greater-Than Sign)
+  key <AD11> {[ U005D, U007D, U003E ]};
+
+  // ']' key
+  // Normal: U005B ([) (Left Square Bracket)
+  // Shift: U007B ({) (Left Curly Bracket)
+  // AltGr: U003C (<) (Less-Than Sign)
+  key <AD12> {[ U005B, U007B, U003C ]};
+
+  // ========================
+  // ===== 3rd row keys =====
+  // ========================
+
+  // 'A' key
+  // Normal: U0627 (ا)
+  // Shift: U0622 (آ)
+  // AltGr: U0653 (ٓ) (Arabic Maddah Above)
+  key <AC01> {[ U0627, U0622, U0653 ]};
+
+  // 'S' key
+  // Normal: U0633 (س)
+  // Shift: U0635 (ص)
+  // AltGr: U0671 (ٱ) (Arabic Letter Alef Wasla)
+  key <AC02> {[ U0633, U0635, U0671 ]};
+
+  // 'D' key
+  // Normal: U062F (د)
+  // Shift: U062B (ث) (Arabic Letter Theh)
+  // AltGr: U00B0 (°) (Degree Sign)
+  key <AC03> {[	U062F, U062B, U00B0 ]};
+
+  // 'F' key
+  // Normal: U0641 (ف)
+  // Shift: NoSymbol
+  // AltGr: U202C (POP DIRECTIONAL FORMATTING)
+  key <AC04> {[	U0641, NoSymbol, U202C ]};
+
+  // 'G' key
+  // Normal: U06AF (گ)
+  // Shift: U06C0 (ۀ)
+  // AltGr: NoSymbol
+  key <AC05> {[ U06AF,	U06C0, NoSymbol	]};
+
+  // 'H' key
+  // Normal: U0647 (ه)
+  // Shift: U062D (ح)
+  // AltGr: NoSymbol
+  key <AC06> {[ U0647, U062D, NoSymbol ]};
+
+  // 'J' key
+  // Normal: U062C (ج)
+  // Shift: U0698 (ژ)
+  // AltGr: NoSymbol
+  key <AC07> {[	U062C, U0698, NoSymbol ]};
+
+  // 'K' key
+  // Normal: U06A9 (ک) (Arabic Letter Keheh)
+  // Shift: U0643 (ك) (Arabic Letter Kaf)
+  // AltGr: U002C (,) (Comma)
+  key <AC08> {[	U06A9, U0643, U002C ]};
+
+  // 'L' key
+  // Normal: U0644 (ل)
+  // Shift: U0629 (ة) (Arabic Letter Teh Marbuta)
+  // AltGr: U2026 (…) (Horizontal Ellipsis)
+  key <AC09> {[	U0644, U0629, U2026 ]};
+
+  // ';' key
+  // Normal: U061B (؛) (Arabic Semicolon)
+  // Shift: U003A (:) (Colon)
+  // AltGr: U003B (;) (Semicolon)
+  key <AC10> {[ U061B, U003A, U003B ]};
+
+  // ''' key
+  // Normal: U0027 (') (Apostrophe)
+  // Shift: U0022 (") (Quotation Mark)
+  // AltGr: NoSymbol
+  key <AC11> {[ U0027, U0022, NoSymbol ]};
+
+  // '\' key
+  // Normal: U005C (\) (Backslash)
+  // Shift: U007C (|) (Vertical Bar)
+  // AltGr: NoSymbol
+  key <BKSL> {[ backslash, bar, NoSymbol ]};
+
+  // ========================
+  // ===== 4th row keys =====
+  // ========================
+
+  // 'Z' key
+  // Normal: U0632 (ز)
+  // Shift: U0636 (ض)
+  // AltGr: U200E (Left-to-Right Mark)
+  key <AB01> {[ U0632, U0636, U200E ]}; 
+
+  // 'X' key
+  // Normal: U062E (خ)
+  // Shift: U0638 (ظ)
+  // AltGr: U200F (Right-to-Left Mark)
+  key <AB02> {[ U062E, U0638 ]};
+
+  // 'C' key
+  // Normal: U0686 (چ)
+  // Shift: U0630 (ذ)
+  // AltGr: U00A9(©) 
+  key <AB03>	{[ U0686, U0630, U00A9]};
+
+  // 'V' key
+  // Normal: U0648 (و)
+  // Shift: U0624 (ؤ)
+  // AltGr: U202D (Left-to-Right Override)
+  key <AB04>	{[ U0648, U0624, U202D]};
+
+  // 'B' key
+  // Normal: U0628 (ب)
+  // Shift: U064A (ي)
+  // AltGr: U202E (Right-to-Left Override)
+  key <AB05> {[ U0628, U064A, U202E ]};
+
+  // 'N' key
+  // Normal: U0646 (ن)
+  // Shift: NoSymbol
+  // AltGr: U202A (Left-to-Right Embedding)
+  key <AB06> {[ U0646, NoSymbol, U202A ]};
+
+  // 'M' key
+  // Normal: U0645 (م)
+  // Shift: NoSymbol
+  // AltGr: U202B (Right-to-Left Embedding)
+  key <AB07> {[ U0645,	NoSymbol, U202B	]};
+
+  // ',' key
+  // Normal: U060C (،) (Arabic comma)
+  // Shift: U00BB (») (Right-Pointing Double Angle Quotation Mark)
+  // AltGr: U066C (٬) (Arabic Thousands Separator)
+  key <AB08> {[ U060C, U00BB, U066C ]};
+
+  // '.' key
+  // Normal: U002E (.) (Full Stop)
+  // Shift: U00AB («) (Left-Pointing Double Angle Quotation Mark)
+  // AltGr: U066B (٫) (Arabic Decimal Separator)
+  key <AB09> {[ U002E, U00AB, U066B ]};
+
+  // '/' key
+  // Normal: U002F (/) (Solidus)
+  // Shift: U061F (؟) (Arabic Question Mark)
+  // AltGr: U00F7 (÷) (Division Sign)
+  key <AB10> {[ U002F, U061F, U00F7 ]};
+};
